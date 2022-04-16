@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://th.bing.com/th/id/R.5f37de4b4c01069b134b5324300218f2?rik=ESbjUWhDpqBLNA&pid=ImgRaw&r=0");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top)/w3images/pizza.jpg -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME PAGE</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="#myMap" class="w3-bar-item w3-button">Reservations</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomright w3-padding">
+    <span class="w3-tag w3-xlarge">Mon-Fri: Noon to 10pm<br>Weekends: Noon to Midnight</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-blue w3-hide-small" style="font-size:100px">Welcome to...<br>La Comida Promedio</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">To The Menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-cyan w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU <img src="https://i.pinimg.com/originals/c4/cb/9a/c4cb9abc7c69713e7e816e6a624ce7f8.gif" style="width:150px" class="w3-circle w3-middle" alt="Food-gif"></h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Meals');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Meals</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sides');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sides</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Meals" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Black Beans and Rice Quesadilla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.99</span></h1>
+      <p class="w3-text-grey">Eight cheesy quesadillas with a side of fresh beans, rice, tomatoes, lettuce, and sour cream.</p>
+      <hr>
+   
+      <h1><b>1/4 IB Argus Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.99</span></h1>
+      <p class="w3-text-grey">Juicy quarter pound beef patty on a buttered, sesame seed bun woth the option of having fries or macaroni for a side.</p>
+      <hr>
+      
+      <h1><b>Nachos Texanos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.99</span></h1>
+      <p class="w3-text-grey">A bed of crispy tortilla chips topped with grilled rib-eye steak, chichken, shrimp, green peppers, onions, tomatoes and cheese dips</p>
+      <hr>
+
+      <h1><b>Taco Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.99</span></h1>
+      <p class="w3-text-grey">A deep-fried flour tortilla shell filled with refried beans, grilled rib-eye steak or chicken, green pepper, onions and tomatoes. Topped with lettuce, sour cream, diced tomatoes, guacamole and shredded white cheese.</p>
+      <hr>
+
+      <h1><b>Seafood Molcajete</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$18.99</span></h1>
+      <p class="w3-text-grey">A sizzling dish of shrimp, scallops and tilapia. Mixed with bell peppers, onions, pineapple and topped with Mexican cheese. Served with a side of beans and a salad</p>
+      <hr>
+
+      <h1><b>Comida Promedio ;)</b> <span class="w3-tag w3-grey w3-round">Weekly Special!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.99</span></h1>
+      <p class="w3-text-grey">If you know ya know, but if you don't know you basically should just choose this meal because it's probably the best thing on this menu (ironically also the most expensive).</p>
+    </div>
+
+    <div id="Sides" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <hr>
+   
+      <h1><b>Jalepeno Poppers</b> <span class="w3-tag w3-red w3-round">Spicy!!!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.20</span></h1>
+      <hr>
+      
+      <h1><b>Mozzarella Sticks</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.00</span></h1>
+      <hr>
+
+      <h1><b>Baked Beans</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.00</span></h1>
+      <hr>
+
+      <h1><b>Ceasar Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.25</span></h1>
+      <hr>
+
+      <h1><b>Macaroni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+    </div>
+
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Soft Drinks</b><span class="w3-right w3-tag w3-dark-grey w3-round">$1.50</span></h1>
+      <p class="w3-text-grey">Sprite, Coca-Cola, Fanta Orange, and Tahitian Treat</p>
+      <hr>
+   
+      <h1><b>Lemonade</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Iced Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Sweetened or Unsweetened</p>
+      <hr>
+      
+      <h1><b>Alcoholic Beverages</b> <span class="w3-tag w3-grey w3-round">ID Required!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+      <p class="w3-text-grey">Beer, Wine(Red or White), and Margaritas</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-orchid w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About Us</h1>
+    <p>La Comida Promedia, which was originally created as a joke by two stupidly rich friends, quickly became a family-oriented foundation in the community. With over 25 franchises, the company is striving closer and closer to becoming La Comida Promedia.</p>
+    <h1><b>Our Chefs</b></h1>
+    <p><strong>Chef Banjarian</strong> <img src="https://th.bing.com/th/id/OIP.AEziGmLoew5YNdgLNnPU9QHaLF?pid=ImgDet&rs=1" style="width:150px" class="w3-square w3-middle" alt="Chef1"></p>
+    <p><strong>Chef Johnson</strong> <img src="https://www.essence.com/wp-content/uploads/2016/09/1473784520/Confessions%20black%20head%20chef%20photo%20at-1.jpeg" style="width:150px" class="w3-square w3-middle" alt="Chef 2"></p>
+    <p><strong>Chef Lia</strong> <img src="https://ak.picdn.net/shutterstock/videos/5893451/thumb/9.jpg" style="width:150px" class="w3-square w3-middle" alt="Chef3"></p>
+    
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+     
+        <p>Mon-Fri 12:00 - 22:00</p>
+        <p>Saturday & Sunday 12:00 - 24:00</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-brown w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Reservations</h1>
+    <p>We are located at 123 Sesame Street and we've just opened another restaurant at You're Not Finding This Adress Boulevard. Drop by at anytime to see us.</p>
+    <p><span class="w3-tag">FYI!</span> We do offer full-service catering for any event, large or small and we do work with delivery services such as DoorDash and UberEats (No Postmates, because they're rip-offs). We also accept the digital payments of Apple Pay and Bitcoin. Doge to the moon!</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask us any lingering inquiries or give us feedback:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2022-04-15T15:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Feedback/ Questions" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="rolls of the rick" target="_blank" class="w3-hover-text-red">Our Secret Formula</a>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
